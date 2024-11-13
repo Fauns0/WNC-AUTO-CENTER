@@ -1,0 +1,92 @@
+.servico {
+  padding: 60px 0;
+  text-align: center;
+}
+
+.servico-title {
+  font-size: 2.5rem;
+  color: #333;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.servico-title .highlight {
+  background-image: url('../Img/Destaque.png'); /* Substitua pelo caminho da imagem */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left 50px;
+  background-position: right 30px;
+  padding: 0 5px;
+  display: inline-block;
+}
+
+.servico-description {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 40px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.servico-cards {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.servico-card {
+  background-color: #f5f5f5;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 10px;
+  width: 250px;
+  text-align: left;
+}
+
+.servico-card h3 {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.servico-card .price {
+  font-size: 1.5rem;
+  color: #333;
+  margin: 15px 0;
+  font-weight: bold;
+}
+
+.servico-card ul {
+  list-style: none;
+  padding: 0;
+  color: #666;
+}
+
+.servico-card ul li {
+  margin-bottom: 8px;
+  font-size: 0.9rem;
+}
+
+.servico-button {
+  background-color: #4d90fe;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 15px;
+  text-align: center;
+  display: block;
+}
+
+.servico-button:hover {
+  background-color: #357ae8;
+}
+
+/* Estilo especial para o cartão em destaque */
+.servico-card.featured {
+  background-color: #e0f0ff;
+  border: 1px solid #4d90fe;
+}

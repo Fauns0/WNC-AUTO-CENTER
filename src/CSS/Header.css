@@ -1,0 +1,65 @@
+/* Container principal do header */
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 40px;
+  background-color: white;
+  border-bottom: 2px solid #003366;
+}
+
+/* Estilos para o logo e título */
+.header-logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo-image {
+  width: 40px; /* Tamanho do logotipo */
+  height: auto;
+  margin-right: 10px;
+}
+
+.header-logo h1 {
+  font-size: 1.5rem;
+  color: #003366;
+  font-weight: bold;
+}
+
+/* Estilos para o menu de navegação */
+.header-nav {
+  display: flex;
+  gap: 20px;
+}
+
+.header-nav a {
+  color: #007bff; /* Cor azul semelhante à imagem */
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.header-nav a:hover {
+  text-decoration: underline;
+}
+
+/* Botão de agendamento */
+.header-button {
+  background-color: #4d90fe;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+
+.header-button:hover {
+  background-color: #357ae8;
+}

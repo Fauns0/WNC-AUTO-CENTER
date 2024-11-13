@@ -1,0 +1,48 @@
+.why-choose-us {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 60px 0;
+  }
+  
+  .why-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .why-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .why-content {
+    flex: 1;
+  }
+  
+  .why-content h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: bold;
+    line-height: 1.2;
+  }
+  
+  .why-content .highlight {
+    background-image: url('../Img/Destaque.png'); /* Caminho para a imagem */
+    background-size: cover; /* Ajusta o tamanho da imagem para cobrir o texto */
+    background-repeat: no-repeat;
+    background-position: Right 29px;
+    padding: 0 5px;
+    display: inline-block;
+
+  }
+  
+  .why-content p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+    max-width: 600px;
+  }
+  

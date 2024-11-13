@@ -1,0 +1,38 @@
+.working-hours {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 60px 0;
+  }
+  
+  .working-content {
+    flex: 1;
+    color: #333;
+  }
+  
+  .working-content h2 {
+    font-size: 2.5rem;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .working-content p {
+    font-size: 1rem;
+    line-height: 1.6;
+    max-width: 600px;
+    margin-bottom: 15px;
+  }
+  
+  .working-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .working-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
