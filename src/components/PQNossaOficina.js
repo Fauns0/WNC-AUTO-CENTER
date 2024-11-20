@@ -1,14 +1,14 @@
 import React from 'react';
-import '../CSS/WhyChooseUs.css';
-import technicianImage from '../Img/Boneco.png'; // Substitua pelo caminho da sua imagem
+import '../CSS/PQNossaOficina.css';
+import technicianImage from '../Img/Boneco.png'; 
 
-function WhyChooseUs() {
+function PQNossaOficina() {
   return (
-    <section className="why-choose-us container">
-      <div className="why-image">
+    <section className="PQNossaOficina container">
+      <div className="PQNossaOficina-image">
         <img src={technicianImage} alt="Técnico da Oficina" />
       </div>
-      <div className="why-content">
+      <div className="PQNossaOficina-content">
         <h2>
           Por que Escolher a <span className="highlight">Nossa Oficina?</span>
         </h2>
@@ -28,4 +28,4 @@ function WhyChooseUs() {
   );
 }
 
-export default WhyChooseUs;
+export default PQNossaOficina;

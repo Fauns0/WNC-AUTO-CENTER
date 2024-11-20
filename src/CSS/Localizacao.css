@@ -1,16 +1,16 @@
-.location {
+.Localizacao {
     display: flex;
     align-items: center;
     gap: 20px;
     padding: 60px 0;
   }
   
-  .location-content {
+  .Localizacao-content {
     flex: 1;
     color: #333;
   }
   
-  .location-content h2 {
+  .Localizacao-content h2 {
     font-size: 2.5rem;
     color: #333;
     font-weight: bold;
@@ -19,28 +19,28 @@
     display: inline-block;
   }
   
-  .location-content .highlight {
-    background-image: url('../Img/Destaque.png'); /* Use o caminho relativo a partir da pasta public */
-    background-size: contain; /* Ajusta o tamanho da imagem */
+  .Localizacao-content .highlight {
+    background-image: url('../Img/Destaque.png'); 
+    background-size: contain; 
     background-repeat: no-repeat;
     background-position: left bottom;
     padding: 0 5px;
     display: inline-block;
   }
   
-  .location-content p {
+  .Localizacao-content p {
     font-size: 1rem;
     line-height: 1.6;
     max-width: 600px;
   }
   
-  .location-image {
+  .Localizacao-image {
     flex: 1;
     display: flex;
     justify-content: center;
   }
   
-  .location-image img {
+  .Localizacao-image img {
     max-width: 100%;
     height: auto;
     border-radius: 10px;

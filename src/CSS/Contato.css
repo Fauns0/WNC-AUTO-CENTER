@@ -1,27 +1,26 @@
 .contato {
-    background-color: #003366; /* Fundo azul */
-    color: white; /* Cor do texto */
+    background-color: #003366; 
+    color: white; 
     display: flex;
-    justify-content: center; /* Centraliza o conteúdo horizontalmente */
-    align-items: center; /* Centraliza o conteúdo verticalmente */
-    padding: 30px 20px; /* Padding para ajustar o tamanho da seção */
-    background-image: url('../Img/Fundo-img.png'); /* Adiciona o padrão ondulado de fundo */
+    justify-content: center; 
+    align-items: center; 
+    background-image: url('../Img/Fundo-img.png'); 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    min-height: 200px; /* Define uma altura mínima para a seção */
+    min-height: 200px; 
   }
   
   .contato-content {
-    text-align: center; /* Centraliza o texto */
-    max-width: 800px; /* Define a largura máxima do conteúdo */
+    text-align: center; 
+    max-width: 800px; 
   }
   
   .contato-content h2 {
     font-size: 2.5rem;
     font-weight: bold;
     margin-bottom: 10px;
-    color: white; /* Certifica-se de que o título "Contato" esteja em branco */
+    color: white; 
   }
   
   .contato-content p {

@@ -1,6 +1,6 @@
 import React from 'react';
 import '../CSS/Header.css';
-import logo from '../Img/Logo.png'; // Adicione o caminho da imagem do logotipo
+import logo from '../Img/Logo.png'; 
 
 function Header() {
   return (

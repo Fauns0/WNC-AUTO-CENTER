@@ -1,0 +1,42 @@
+.FazerAgendamento {
+    background-color: #003366; 
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+    display: block; 
+    background-image: url('../Img/Fundo-img.png'); 
+  }
+  
+  .FazerAgendamento h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: white; 
+  }
+  
+  .FazerAgendamento p {
+    font-size: 1rem;
+    color: white;
+    max-width: 700px;
+    margin: 0 auto 30px;
+    line-height: 1.6;
+    display: block;
+  }
+  
+  .cta-button {
+    background-color: #4d90fe;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: inline-block; 
+  }
+  
+  .cta-button:hover {
+    background-color: #357ae8;
+  }
+  

@@ -1,6 +1,6 @@
 import React from 'react';
-import '../CSS/About.css';
-import oficinaImage from '../Img/Oficina.png'; // Substitua pelo caminho da sua imagem
+import '../CSS/QuemSomos.css';
+import oficinaImage from '../Img/Oficina.png'; 
 
 function About() {
   return (

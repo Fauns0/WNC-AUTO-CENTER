@@ -1,11 +1,11 @@
 import React from 'react';
-import '../CSS/Location.css';
-import locationImage from '../Img/Location.png'; // Substitua pelo caminho da imagem do técnico ou mapa
+import '../CSS/Localizacao.css';
+import LocalizacaoImage from '../Img/Localizacao.png'; 
 
-function Location() {
+function Localizacao() {
   return (
-    <section className="location container">
-      <div className="location-content">
+    <section className="Localizacao container">
+      <div className="Localizacao-content">
         <h2>
           Localização <span className="highlight"> </span>
         </h2>
@@ -20,11 +20,11 @@ function Location() {
         <br/> 
         <a href="https://maps.app.goo.gl/QVUjqMbkG21y4kWA7" > <button  > Map</button></a>
       </div>
-      <div className="location-image">
-        <img src={locationImage} alt="Imagem de Localização" />
+      <div className="Localizacao-image">
+        <img src={LocalizacaoImage} alt="Imagem de Localização" />
       </div>
     </section>
   );
 }
 
-export default Location;
+export default Localizacao;

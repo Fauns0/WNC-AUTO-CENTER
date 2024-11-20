@@ -1,4 +1,4 @@
-/* Container principal do header */
+
 .header {
   position: fixed;
   top: 0;
@@ -11,14 +11,14 @@
   border-bottom: 2px solid #003366;
 }
 
-/* Estilos para o logo e título */
+
 .header-logo {
   display: flex;
   align-items: center;
 }
 
 .logo-image {
-  width: 40px; /* Tamanho do logotipo */
+  width: 40px; 
   height: auto;
   margin-right: 10px;
 }
@@ -29,14 +29,14 @@
   font-weight: bold;
 }
 
-/* Estilos para o menu de navegação */
+
 .header-nav {
   display: flex;
   gap: 20px;
 }
 
 .header-nav a {
-  color: #007bff; /* Cor azul semelhante à imagem */
+  color: #007bff; 
   text-decoration: none;
   font-weight: 500;
   font-size: 1rem;
@@ -46,7 +46,7 @@
   text-decoration: underline;
 }
 
-/* Botão de agendamento */
+
 .header-button {
   background-color: #4d90fe;
   color: white;

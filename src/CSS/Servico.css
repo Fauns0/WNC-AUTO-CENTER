@@ -11,7 +11,7 @@
 }
 
 .servico-title .highlight {
-  background-image: url('../Img/Destaque.png'); /* Substitua pelo caminho da imagem */
+  background-image: url('../Img/Destaque.png'); 
   background-size: cover;
   background-repeat: no-repeat;
   background-position: left 50px;
@@ -85,7 +85,7 @@
   background-color: #357ae8;
 }
 
-/* Estilo especial para o cartão em destaque */
+
 .servico-card.featured {
   background-color: #e0f0ff;
   border: 1px solid #4d90fe;

@@ -1,11 +1,11 @@
 import React from 'react';
 import Header from './components/Header';
-import About from './components/About';
-import WhyChooseUs from './components/WhyChooseUs';
-import Location from './components/Location';
+import QuemSomos from './components/QuemSomos';
+import PQNossaOficina from './components/PQNossaOficina';
+import Localizacao from './components/Localizacao';
 import Servico from './components/Servico';
-import ScheduleCallToAction from './components/ScheduleCallToAction';
-import WorkingHours from './components/WorkingHours';
+import FazerAgendamento from './components/FazerAgendamento';
+import HorarioFuncionamento from './components/HorarioFuncionamento';
 import Contato from './components/Contato';
 import Mecanicos from './components/Mecanicos';
 import Footer from './components/Footer';
@@ -16,14 +16,14 @@ function App() {
     <div>
       <Header />
       <br/> <br/> <br/> <br/>
-      <About />
+      <QuemSomos />
       <br/> <br/> <br/> <br/>
-      <WhyChooseUs />
+      <PQNossaOficina />
       <br/> <br/> <br/> <br/>
-      <Location />
+      <Localizacao />
       <Servico />
-      <ScheduleCallToAction />
-      <WorkingHours />
+      <FazerAgendamento />
+      <HorarioFuncionamento />
       <Contato />
       <Mecanicos />
       <Footer />

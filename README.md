@@ -1,9 +1,9 @@
 # WNC-AUTO-CENTER
 
 
-# Para projetos Node.js
+# Baixar as dependencias
 npm install
 
-# Para projetos Node.js
+# Dar start no projeto
 npm start
 

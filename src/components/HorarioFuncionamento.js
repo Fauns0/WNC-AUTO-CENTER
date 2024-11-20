@@ -1,11 +1,11 @@
 import React from 'react';
-import '../CSS/WorkingHours.css';
-import workingImage from '../Img/H-Funcionamento-img.png'; // Substitua pelo caminho da sua imagem
+import '../CSS/HorarioFuncionamento.css';
+import HorarioFuncionamentoImage from '../Img/H-Funcionamento-img.png'; 
 
-function WorkingHours() {
+function HorarioFuncionamento() {
   return (
-    <section className="working-hours container">
-      <div className="working-content">
+    <section className="HorarioFuncionamento container">
+      <div className="HorarioFuncionamento-content">
         <h2>Horário de Funcionamento</h2>
         <p>Atendemos de segunda a sexta-feira, das 8h às 18h.</p>
         <p>
@@ -13,11 +13,11 @@ function WorkingHours() {
           agendamentos ou dúvidas, entre em contato conosco por telefone ou faça-nos uma visita.
         </p>
       </div>
-      <div className="working-image">
-        <img src={workingImage} alt="Imagem de Funcionamento" />
+      <div className="HorarioFuncionamento-image">
+        <img src={HorarioFuncionamentoImage} alt="Imagem de Funcionamento" />
       </div>
     </section>
   );
 }
 
-export default WorkingHours;
+export default HorarioFuncionamento;
