@@ -3,10 +3,9 @@ import '../CSS/Footer.css';
 function Footer() {
   return (
     <footer>
-      <p>WNC AUTO CENTER &copy; 2023</p>
+      <p>WNC AUTO CENTER </p>
       <nav>
         <a href="#politica">Política de Privacidade</a>
-        <a href="#termos">Termos de Uso</a>
       </nav>
     </footer>
   );

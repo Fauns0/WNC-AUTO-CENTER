@@ -40,7 +40,6 @@ function Servico() {
           <h3>Serviços de Elétrica</h3>
           <p className="price">$49.99</p>
           <ul>
-            <li>✔ Diagnóstico e reparo de sistemas elétricos</li>
             <li>✔ Alternador</li>
             <li>✔ Sistemas de iluminação</li>
             <li>✔ Integridade da bateria</li>

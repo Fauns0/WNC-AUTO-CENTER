@@ -1,6 +1,6 @@
 import React from 'react';
 import '../CSS/Mecanicos.css';
-import user1 from '../Img/user1.png'; 
+import user1 from '../Img/user1.png';
 import user2 from '../Img/user2.png';
 import user3 from '../Img/user3.png';
 
@@ -30,7 +30,7 @@ function Mecanicos() {
   ];
 
   return (
-    <section className="mecanicos">
+    <section id="mecanicos" className="mecanicos">
       <h2 className="mecanicos-title">
         Mecânicos <span className="highlight"> </span>
       </h2>

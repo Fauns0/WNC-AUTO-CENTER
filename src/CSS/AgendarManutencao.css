@@ -1,0 +1,167 @@
+.agendar-manutencao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+  }
+  
+  .header-agendar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .logo-agendar {
+    width: 80px;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  .title-agendar {
+    font-size: 1.5rem;
+    color: #4d90fe;
+    font-weight: bold;
+  }
+  
+  .form-container {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 350px;
+  }
+  
+  .form-label {
+    display: block;
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 8px;
+    text-align: left;
+  }
+  
+  .required {
+    color: red;
+    font-weight: bold;
+  }
+  
+  .input-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .google-button {
+    position: absolute;
+    right: 10px; /* Posiciona o botão com o ícone dentro do campo */
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .google-icon {
+    width: 24px; /* Tamanho do ícone */
+    height: 24px;
+  }
+  
+  .form-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+  }
+  
+  .form-textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    resize: none;
+    height: 80px;
+  }
+  
+  .char-count {
+    font-size: 0.9rem;
+    color: #666;
+    text-align: right;
+    margin-top: 5px;
+  }
+  
+  .buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .back-button {
+    background-color: white;
+    color: #4d90fe;
+    border: 1px solid #4d90fe;
+  }
+  
+  .back-button:hover {
+    background-color: #e8f0fe;
+  }
+  
+  .submit-button {
+    background-color: #4d90fe;
+    color: white;
+  }
+  
+  .submit-button:hover {
+    background-color: #357ae8;
+  }
+  .selected-services {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .service-chip {
+    display: flex;
+    align-items: center;
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    padding: 5px 10px;
+    font-size: 0.9rem;
+    color: #333;
+  }
+  
+  .service-chip:hover {
+    background-color: #e8e8e8;
+  }
+  
+  .remove-service {
+    margin-left: 10px;
+    background-color: transparent;
+    border: none;
+    color: #ff4d4d;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .remove-service:hover {
+    color: #ff0000;
+  }
+  

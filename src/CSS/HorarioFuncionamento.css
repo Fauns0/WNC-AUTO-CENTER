@@ -3,6 +3,7 @@
     align-items: center;
     gap: 20px;
     padding: 60px 0;
+    scroll-margin-top: 230px;
   }
   
   .HorarioFuncionamento-content {
