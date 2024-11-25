@@ -1,14 +1,14 @@
 import React from 'react';
-import '../CSS/Rodape.css';
-function Rodape() {
+import '../CSS/Footer.css';
+function Footer() {
   return (
-    <Rodape>
+    <footer>
       <p>WNC AUTO CENTER </p>
       <nav>
         <a href="#politica">Política de Privacidade</a>
       </nav>
-    </Rodape>
+    </footer>
   );
 }
 
-export default Rodape;
+export default Footer;

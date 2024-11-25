@@ -1,26 +1,23 @@
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
 import '../CSS/AgendarManutencao.css';
 import logo from '../Img/Logo.png';
 import GoogleIcone from '../Img/GoogleIcone.png';
 
-function AgendarManutencao() {
-  const navigate = useNavigate();
+function AgendarManutencao({ onBack }) {
   const [selectedServices, setSelectedServices] = useState([]);
   const [serviceInput, setServiceInput] = useState('');
   const availableServices = ['Revisão', 'Troca de óleo', 'Freios', 'Analisar Veículo'];
+
   const addService = (event) => {
     const value = event.target.value;
     if (value && !selectedServices.includes(value)) {
       setSelectedServices([...selectedServices, value]);
     }
-    setServiceInput(''); 
+    setServiceInput('');
   };
+
   const removeService = (service) => {
     setSelectedServices(selectedServices.filter((item) => item !== service));
-  };
-  const handleBack = () => {
-    navigate('/');
   };
 
   return (
@@ -104,7 +101,7 @@ function AgendarManutencao() {
           <div className="char-count">0 / 100</div>
 
           <div className="buttons">
-            <button onClick={handleBack} type="button" className="button back-button">
+            <button onClick={onBack} type="button" className="button back-button">
               Voltar
             </button>
             <button type="submit" className="button submit-button">
