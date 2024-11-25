@@ -6,16 +6,14 @@ import GoogleIcone from '../Img/GoogleIcone.png';
 
 function ConsultarAgendamento() {
   const navigate = useNavigate();
-
-  // Função para voltar à página inicial e rolar para "Quem Somos"
   const handleBack = () => {
-    navigate('/'); // Redireciona para a página inicial
+    navigate('/'); 
     setTimeout(() => {
-      const section = document.getElementById('quem-somos'); // ID da seção "Quem Somos"
+      const section = document.getElementById('quem-somos'); 
       if (section) {
-        section.scrollIntoView({ behavior: 'smooth' }); // Rola suavemente para a seção
+        section.scrollIntoView({ behavior: 'smooth' }); 
       }
-    }, 100); // Aguarda a página inicial carregar antes de rolar
+    }, 100); 
   };
 
   return (

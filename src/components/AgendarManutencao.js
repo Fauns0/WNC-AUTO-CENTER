@@ -6,29 +6,19 @@ import GoogleIcone from '../Img/GoogleIcone.png';
 
 function AgendarManutencao() {
   const navigate = useNavigate();
-
-  // Estado para armazenar os serviços selecionados
   const [selectedServices, setSelectedServices] = useState([]);
   const [serviceInput, setServiceInput] = useState('');
-
-  // Serviços disponíveis para seleção
   const availableServices = ['Revisão', 'Troca de óleo', 'Freios', 'Analisar Veículo'];
-
-  // Função para adicionar um serviço
   const addService = (event) => {
     const value = event.target.value;
     if (value && !selectedServices.includes(value)) {
       setSelectedServices([...selectedServices, value]);
     }
-    setServiceInput(''); // Limpa o campo após adicionar
+    setServiceInput(''); 
   };
-
-  // Função para remover um serviço
   const removeService = (service) => {
     setSelectedServices(selectedServices.filter((item) => item !== service));
   };
-
-  // Função para voltar à página inicial
   const handleBack = () => {
     navigate('/');
   };
@@ -86,8 +76,6 @@ function AgendarManutencao() {
               </option>
             ))}
           </select>
-
-          {/* Exibir serviços selecionados */}
           <div className="selected-services">
             {selectedServices.map((service, index) => (
               <div key={index} className="service-chip">

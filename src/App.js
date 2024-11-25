@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Header from './components/Header';
-import Footer from './components/Footer';
+import Rodape from './components/Rodape';
 import QuemSomos from './components/QuemSomos';
 import PQNossaOficina from './components/PQNossaOficina';
 import Localizacao from './components/Localizacao';
@@ -19,7 +19,6 @@ function App() {
     <Router>
       <Header />
       <Routes>
-        {/* Página Inicial com todas as seções */}
         <Route
           path="/"
           element={
@@ -39,12 +38,10 @@ function App() {
             </>
           }
         />
-
-        {/* Página para Consultar Agendamento */}
         <Route path="/consultar-agendamento" element={<ConsultarAgendamento />} />
         <Route path="/agendar-manutencao" element={<AgendarManutencao />} />
       </Routes>
-      <Footer />
+      <Rodape />
     </Router>
   );
 }

@@ -6,20 +6,17 @@ import logo from '../Img/Logo.png';
 function Header() {
   const navigate = useNavigate();
 
-  // Função para redirecionar para a página inicial e rolar para "Quem Somos"
   const handleHomeNavigation = () => {
-    navigate('/'); // Redireciona para a página inicial
+    navigate('/'); 
     setTimeout(() => {
-      const section = document.getElementById('quem-somos'); // ID da seção "Quem Somos"
+      const section = document.getElementById('quem-somos');
       if (section) {
-        section.scrollIntoView({ behavior: 'smooth' }); // Rola suavemente para a seção
+        section.scrollIntoView({ behavior: 'smooth' }); 
       }
-    }, 100); // Aguarda a página inicial carregar antes de rolar
+    }, 100); 
   };
-
-  // Função para redirecionar para uma seção específica
   const handleNavigation = (id) => {
-    navigate('/'); // Redireciona para a página inicial
+    navigate('/'); 
     setTimeout(() => {
       const section = document.getElementById(id);
       if (section) {
@@ -27,10 +24,8 @@ function Header() {
       }
     }, 100);
   };
-
-  // Função para redirecionar para uma página específica
   const handlePageNavigation = (path) => {
-    navigate(path); // Redireciona para a rota especificada
+    navigate(path);
   };
 
   return (

@@ -4,9 +4,8 @@ import { useNavigate } from 'react-router-dom';
 
 function FazerAgendamento() {
   const navigate = useNavigate();
-    // Função para redirecionar para uma página específica
   const handlePageNavigation = (path) => {
-    navigate(path); // Redireciona para a rota especificada
+    navigate(path);
   };
   return (
     <section className="FazerAgendamento">
