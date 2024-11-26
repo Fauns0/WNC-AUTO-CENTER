@@ -10,6 +10,7 @@ import HorarioFuncionamento from './components/HorarioFuncionamento.js';
 import Contato from './components/Contato.js';
 import Mecanicos from './components/Mecanicos.js';
 import Footer from './components/Footer.js';
+import ConsultarAgendamento from './components/ConsultarAgendamento.js';
 import './CSS/App.css';
 
 function App() {
@@ -19,20 +20,22 @@ function App() {
     switch (currentPage) {
       case 'agendar-manutencao':
         return <AgendarManutencao onBack={() => setCurrentPage('home')} />;
+      case 'consultar-agendamento':
+        return <ConsultarAgendamento onBack={() => setCurrentPage('home')} />;
       default:
         return (
           <div className="main-content">
             <div className='espacamento1'>
-            <QuemSomos />
+              <QuemSomos />
             </div>
             <div className='espacamento1'>
-            <PQNossaOficina />
+              <PQNossaOficina />
             </div>
             <div className='espacamento1'>
-            <Localizacao />
+              <Localizacao />
             </div>
             <div className='espacamento1'>
-            <Servico />
+              <Servico />
             </div>
             <div className='espacamento1'>
             </div>
@@ -40,7 +43,7 @@ function App() {
             <HorarioFuncionamento />
             <Contato />
             <Mecanicos />
-            <Footer />  
+            <Footer />
           </div>
         );
     }
