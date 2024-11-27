@@ -4,22 +4,21 @@ import '../CSS/Header.css';
 
 function Header({ navigateTo, currentPage }) {
   const scrollToTop = () => {
-    navigateTo('home'); // Navega para a página inicial
-    window.scrollTo({ top: 0, behavior: 'smooth' }); // Rola suavemente até o topo
+    navigateTo('home'); 
+    window.scrollTo({ top: 0, behavior: 'smooth' }); 
   };
 
   const scrollToSection = (id) => {
     if (currentPage !== 'home') {
-      // Se não estiver na página inicial, navega para 'home' primeiro
+     
       navigateTo('home');
       setTimeout(() => {
         const section = document.getElementById(id);
         if (section) {
           section.scrollIntoView({ behavior: 'smooth' });
         }
-      }, 100); // Aguarda a renderização da página inicial antes de rolar
+      }, 100); 
     } else {
-      // Se já estiver na página inicial, apenas rola para a seção
       const section = document.getElementById(id);
       if (section) {
         section.scrollIntoView({ behavior: 'smooth' });
