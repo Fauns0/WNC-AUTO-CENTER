@@ -3,28 +3,36 @@ import '../CSS/Mecanicos.css';
 import user1 from '../Img/user1.png';
 import user2 from '../Img/user2.png';
 import user3 from '../Img/user3.png';
+import user4 from '../Img/user4.png';
 
 function Mecanicos() {
   const testimonials = [
     {
       image: user1,
-      text: "“If you haven't tried whitespace yet, you need to give it a shot for your next event. It's so easy and intuitive to get a new event setup and if you need any help their customer service is seriously amazing.”",
-      name: 'Jessie Owner',
-      position: 'Founder, XYZ Company',
+      text: "Nosso objetivo é garantir que seu carro esteja em perfeito estado para o dia a dia. Aqui, trabalhamos com eficiência para resolver qualquer problema de forma prática.",
+      name: 'Willian Nunes',
+      position: 'Tempo de experiencia: 35 anos',
       rating: 5,
     },
     {
       image: user2,
-      text: "“If you haven't tried whitespace yet, you need to give it a shot for your next event. It's so easy and intuitive to get a new event setup and if you need any help their customer service is seriously amazing.”",
-      name: 'Jessie Owner',
-      position: 'Founder, XYZ Company',
+      text: "Estamos prontos para atender suas necessidades, seja manutenção preventiva ou reparos urgentes. Seu veículo estará pronto dentro do prazo combinado.",
+      name: 'Florisvaldo da Silva',
+      position: 'Tempo de experiencia: 33 anos',
       rating: 5,
     },
     {
       image: user3,
-      text: "“If you haven't tried whitespace yet, you need to give it a shot for your next event. It's so easy and intuitive to get a new event setup and if you need any help their customer service is seriously amazing.”",
-      name: 'Jessie Owner',
-      position: 'Founder, XYZ Company',
+      text: "Aqui na oficina, priorizamos um atendimento claro e direto, com profissionais qualificados e um ambiente de confiança, nosso objetivo é proporcionar tranquilidade e satisfação a cada cliente.",
+      name: 'Adriano Junior',
+      position: 'Tempo de experiencia: 12 anos',
+      rating: 5,
+    },
+    {
+      image: user4,
+      text: "Qualquer problema que seu veículo tiver, estamos prontos para resolver, nossa meta é garantir que você saia daqui satisfeito e com seu veículo funcionando perfeitamente.",
+      name: 'Andrei Luis',
+      position: 'Tempo de experiencia: 3 anos',
       rating: 5,
     },
   ];
