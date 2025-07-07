@@ -1,12 +1,15 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom'; // 1. Importa o useNavigate
 import '../CSS/FazerAgendamento.css';
 
 function FazerAgendamento() {
-  const navigate = useNavigate(); // 2. Inicializa o hook de navegação
-
-  const handleAgendarClick = () => {
-    navigate('/agendar'); // 3. Navega para a rota "/agendar"
+  // Função para abrir o WhatsApp com uma mensagem padrão
+  const handleWhatsAppRedirect = () => {
+    const numeroDestino = '5565992329866'; // O seu número
+    const mensagem = "Olá! Gostaria de agendar uma manutenção."; // Mensagem inicial
+    
+    const linkWhatsApp = `https://wa.me/${numeroDestino}?text=${encodeURIComponent(mensagem)}`;
+    
+    window.open(linkWhatsApp, '_blank');
   };
 
   return (
@@ -18,8 +21,8 @@ function FazerAgendamento() {
         está preparada para atender suas necessidades e oferecer um serviço de
         excelência. Estamos aguardando por você!
       </p>
-      {/* 4. O botão agora chama a nova função */}
-      <button onClick={handleAgendarClick} className="cta-button">
+      {/* O botão agora chama a função do WhatsApp */}
+      <button onClick={handleWhatsAppRedirect} className="cta-button">
         Agendar manutenção →
       </button>
     </section>

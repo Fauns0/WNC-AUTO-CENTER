@@ -1,14 +1,26 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import logo from '../Img/Logo.png';
 import '../CSS/Header.css';
 
 function Header() {
+  const [menuAberto, setMenuAberto] = useState(false);
   const navigate = useNavigate();
 
-  // Função para voltar para a página principal ao clicar no logo
+  // Função para navegar para a página principal
   const goToHome = () => {
     navigate('/');
+  };
+
+  // Função para abrir o WhatsApp com uma mensagem padrão
+  const handleWhatsAppRedirect = () => {
+    const numeroDestino = '5565992329866'; // O seu número
+    const mensagem = "Olá! Gostaria de agendar uma manutenção."; // Mensagem inicial
+    
+    const linkWhatsApp = `https://wa.me/${numeroDestino}?text=${encodeURIComponent(mensagem)}`;
+    
+    window.open(linkWhatsApp, '_blank');
+    setMenuAberto(false);
   };
 
   return (
@@ -19,10 +31,10 @@ function Header() {
       </div>
 
       <div className="header-right-content">
-        {/* O único botão que fica no header */}
-        <Link to="/agendar" className="header-button">
+        {/* Usamos um botão normal que chama a função do WhatsApp */}
+        <button onClick={handleWhatsAppRedirect} className="header-button">
           Agendar manutenção →
-        </Link>
+        </button>
       </div>
     </header>
   );
