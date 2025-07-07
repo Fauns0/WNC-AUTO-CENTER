@@ -1,10 +1,16 @@
 import React from 'react';
 import '../CSS/QuemSomos.css';
 import oficinaImage from '../Img/Oficina.png'; 
+import useScrollAnimation from '../hooks/useScrollAnimation'; 
 
 function QuemSomos() {
+  const addToRefs = useScrollAnimation(); 
   return (
-    <section id="quem-somos" className="QuemSomos container">
+    // 3. Adiciona a classe e a ref para ativar a animação
+    <section 
+      className="QuemSomos container animate-on-scroll" 
+      ref={addToRefs}
+    >
       <div className="QuemSomos-content">
         <h2>Quem Somos</h2>
         <p>

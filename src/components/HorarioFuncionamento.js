@@ -4,7 +4,8 @@ import HorarioFuncionamentoImage from '../Img/H-Funcionamento-img.png';
 
 function HorarioFuncionamento() {
   return (
-    <section id="funcionamento" className="HorarioFuncionamento container">
+    // O id="funcionamento" foi REMOVIDO daqui
+    <section className="HorarioFuncionamento container">
       <div className="HorarioFuncionamento-content">
         <h2>Horário de Funcionamento</h2>
         <p>Atendemos de segunda a sexta-feira, das das 8h às 11h/13h às 18h</p>

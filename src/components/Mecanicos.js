@@ -38,7 +38,8 @@ function Mecanicos() {
   ];
 
   return (
-    <section id="mecanicos" className="mecanicos">
+    // AQUI ESTÁ A CORREÇÃO: O id="mecanicos" foi removido
+    <section className="mecanicos">
       <h2 className="mecanicos-title">
         Mecânicos <span className="highlight"> </span>
       </h2>

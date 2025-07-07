@@ -1,71 +1,80 @@
+/* Estilos da secção Mecânicos */
 .mecanicos {
-  text-align: center;
-  padding: 60px 20px;
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
 }
 
 .mecanicos-title {
-  font-size: 2.5rem;
-  font-weight: bold;
-  margin-bottom: 20px;
-  position: relative;
+    font-size: 2.5rem;
+    color: #003366;
+    margin-bottom: 50px;
+    position: relative;
 }
 
-.mecanicos-title .highlight {
-  background-image: url('../Img/Destaque.png'); 
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  padding: 0 5px;
-  display: inline-block;
-}
-
+/* Container dos cards */
 .testimonials {
-  display: flex;
-  gap: 20px;
-  justify-content: center;
-  margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: stretch; /* Garante que os cards tenham a mesma altura */
+    gap: 30px;
+    flex-wrap: wrap; /* Permite que os cards quebrem para a linha de baixo */
 }
 
+/* Estilo de cada card individual */
 .testimonial-card {
-  background-color: #ffffff;
-  padding: 20px;
-  border-radius: 10px;
-  width: 290px;
-  text-align: left;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    padding: 30px;
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 }
 
 .user-image {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  margin-bottom: 15px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto 20px auto; /* Centraliza a imagem */
+    border: 3px solid #003366;
 }
 
 .testimonial-text {
-  font-size: 1rem;
-  color: #555;
-  margin-bottom: 15px;
+    font-style: italic;
+    color: #555;
+    flex-grow: 1; /* Faz com que o texto ocupe o espaço disponível, alinhando os nomes */
+    margin-bottom: 20px;
 }
 
 .user-name {
-  font-weight: bold;
-  margin-bottom: 5px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #003366;
+    margin: 0 0 5px 0;
 }
 
 .user-position {
-  color: #777777;
-  font-size: 0.9rem;
-  margin-bottom: 10px;
-}
-
-.user-rating {
-  color: #ffd700; 
+    font-size: 0.9rem;
+    color: #777;
+    margin: 0;
 }
 
 
+/* --- Estilos para Telas Pequenas (Responsivo) --- */
+@media (max-width: 768px) {
+    .testimonials {
+        /* Empilha os cards verticalmente */
+        flex-direction: column;
+        align-items: center; /* Centraliza os cards na coluna */
+        gap: 25px;
+    }
 
-
-
-
-
+    .testimonial-card {
+        /* O card ocupa 90% da largura da tela */
+        width: 90%;
+        max-width: 400px; /* Define uma largura máxima para não ficar muito largo */
+    }
+}

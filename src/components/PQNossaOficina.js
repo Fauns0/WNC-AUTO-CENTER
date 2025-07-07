@@ -1,28 +1,23 @@
 import React from 'react';
 import '../CSS/PQNossaOficina.css';
-import technicianImage from '../Img/Boneco.png'; 
+import PQNossaOficinaImage from '../Img/Boneco.png';
 
 function PQNossaOficina() {
   return (
+    // Removido: id, ref, e a classe "animate-on-scroll"
     <section className="PQNossaOficina container">
       <div className="PQNossaOficina-image">
-        <img src={technicianImage} alt="Técnico da Oficina" />
+        <img src={PQNossaOficinaImage} alt="Mecânico a trabalhar num carro" />
       </div>
       <div className="PQNossaOficina-content">
-        <h2>
-          Por que Escolher a <span className="highlight">Nossa Oficina?</span>
-        </h2>
-        <p>
-          Nossa oficina se destaca pela qualidade, confiança e compromisso com a
-          satisfação do cliente. Contamos com uma equipe de profissionais altamente
-          qualificados e experientes, que utilizam as mais modernas tecnologias para
-          garantir um serviço rápido e eficiente. Oferecemos uma ampla gama de serviços
-          de reparo e manutenção, sempre com preços justos e peças de qualidade. Além
-          disso, priorizamos o atendimento personalizado, garantindo que suas
-          necessidades sejam atendidas de forma precisa e transparente. Ao escolher
-          nossa oficina, você terá a certeza de estar cuidando bem do seu veículo com
-          quem realmente entende do assunto.
-        </p>
+        <h2>Por que escolher nossa oficina?</h2>
+        <p>Oferecemos um serviço de excelência, com foco total na sua satisfação e segurança.</p>
+        <ul className="PQNossaOficina-list">
+          <li>Equipa especializada e certificada</li>
+          <li>Equipamentos de última geração</li>
+          <li>Transparência total no orçamento e serviço</li>
+          <li>Garantia de qualidade em todas as peças e mão de obra</li>
+        </ul>
       </div>
     </section>
   );

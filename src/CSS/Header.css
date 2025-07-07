@@ -1,65 +1,74 @@
-
 .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 40px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e0e0e0;
+  height: 82px;
+  
+  /* Posicionamento fixo */
   position: fixed;
   top: 0;
+  left: 0;
   width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 20px 40px;
-  background-color: white;
-  border-bottom: 2px solid #2D90DB;
+  z-index: 100;
+  box-sizing: border-box;
 }
-
 
 .header-logo {
   display: flex;
   align-items: center;
+  gap: 15px;
+  cursor: pointer;
 }
 
-.logo-image {
-  width: 40px; 
-  height: auto;
-  margin-right: 10px;
+.logo-image { 
+  height: 60px; 
 }
 
-.header-logo h1 {
-  font-size: 1.5rem;
-  color: #2D90DB;
-  font-weight: bold;
+.header-logo h1 { 
+  font-size: 1.5rem; 
+  color: #003366; 
+  margin: 0; 
 }
 
-
-.header-nav {
+/* O container do botão */
+.header-right-content {
   display: flex;
-  gap: 20px;
 }
-
-.header-nav a {
-  color: #007bff; 
-  text-decoration: none;
-  font-weight: 500;
-  font-size: 1rem;
-}
-
-.header-nav a:hover {
-  text-decoration: underline;
-}
-
 
 .header-button {
-  background-color: #4d90fe;
-  color: white;
   padding: 10px 20px;
+  background-color: #003366;
+  color: white;
+  border: none;
   border-radius: 5px;
-  text-decoration: none;
-  font-weight: bold;
+  cursor: pointer;
   font-size: 1rem;
-  display: flex;
-  align-items: center;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.2s;
+  text-decoration: none; /* Remove o sublinhado do Link */
+  display: inline-block;
+  text-align: center;
 }
 
 .header-button:hover {
-  background-color: #2D90DB;
+  background-color: #0055a5;
+}
+
+
+/* --- Estilos para Telas Pequenas (Responsivo) --- */
+@media (max-width: 768px) {
+  .header {
+    padding: 10px 20px; /* Menos espaçamento lateral */
+  }
+
+  .header-logo h1 {
+    display: none; /* Esconde o nome da oficina para ganhar espaço */
+  }
+
+  .header-button {
+    padding: 8px 12px; /* Botão ligeiramente menor */
+    font-size: 0.9rem;
+  }
 }

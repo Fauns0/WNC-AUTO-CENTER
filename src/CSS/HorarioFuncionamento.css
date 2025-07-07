@@ -1,39 +1,55 @@
 .HorarioFuncionamento {
     display: flex;
     align-items: center;
-    gap: 20px;
-    padding: 60px 0;
-    scroll-margin-top: 230px;
-  }
-  
-  .HorarioFuncionamento-content {
-    flex: 1;
-    color: #333;
-  }
-  
-  .HorarioFuncionamento-content h2 {
-    font-size: 2.5rem;
-    color: #333;
-    font-weight: bold;
-    margin-bottom: 20px;
-  }
-  
-  .HorarioFuncionamento-content p {
-    font-size: 1rem;
-    line-height: 1.6;
-    max-width: 600px;
-    margin-bottom: 15px;
-  }
-  
-  .HorarioFuncionamento-image {
-    flex: 1;
-    display: flex;
     justify-content: center;
-  }
-  
-  .HorarioFuncionamento-image img {
-    max-width: 100%;
+    padding: 60px 40px;
+    background-color: #f9f9f9;
+    gap: 40px;
+}
+
+.HorarioFuncionamento-content {
+    max-width: 500px;
+}
+
+.HorarioFuncionamento-content h2 {
+    font-size: 2.5rem;
+    color: #003366;
+    margin-bottom: 20px;
+}
+
+.HorarioFuncionamento-content p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.HorarioFuncionamento-image {
+    flex: 1;
+    max-width: 50%;
+}
+
+.HorarioFuncionamento-image img {
+    width: 100%;
     height: auto;
-    border-radius: 10px;
-  }
-  
+    border-radius: 8px;
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .HorarioFuncionamento {
+        flex-direction: column;
+        padding: 40px 20px;
+    }
+
+    .HorarioFuncionamento-content {
+        text-align: center;
+        margin-bottom: 30px;
+        max-width: 100%;
+    }
+
+    .HorarioFuncionamento-image {
+        width: 100%;
+        max-width: 400px;
+    }
+}

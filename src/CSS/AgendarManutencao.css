@@ -1,174 +1,181 @@
-.agendar-manutencao {
+.agendar-manutencao-page {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  padding: 20px;
-  font-family: Arial, sans-serif;
-  background-color: #f9f9f9;
+  align-items: flex-start;
   min-height: 100vh;
-}
-
-.header-agendar {
-  display: flex;
-  align-items: center;
-  margin-bottom: 14px;
-  text-align: center;
-}
-
-.logo-agendar {
-  width: 50px;
-  height: auto;
-  margin-right: 10px;
-}
-
-.title-agendar {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #4d90fe;
-}
-
-.form-container {
-  background-color: white;
-  padding: 20px 30px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  max-width: 500px;
-  width: 100%;
-}
-
-.form {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-
-.form-label {
-  font-size: 0.9rem;
-  font-weight: bold;
-  color: #333;
-  margin-bottom: 5px;
-}
-
-.form-label .required {
-  color: red;
-  margin-right: 5px;
-}
-
-.form-input {
-  padding: 10px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  font-size: 0.9rem;
-  width: 100%;
+  background-color: #f7f8fc;
+  padding: 50px 20px;
   box-sizing: border-box;
 }
 
-.input-container {
+.form-wrapper {
+  width: 100%;
+  max-width: 700px;
+}
+
+.form-header {
   display: flex;
+  flex-direction: column;
   align-items: center;
+  margin-bottom: 30px;
+}
+
+.logo-form {
+  width: 70px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.title-form {
+  font-size: 1.8rem;
+  color: #003366;
+  font-weight: bold;
+}
+
+.form-layout {
+  display: flex;
+  flex-direction: column;
+  gap: 18px; /* Espaçamento entre as linhas */
+}
+
+.form-row {
+  display: flex;
+  align-items: flex-start; /* Alinha o label com o topo do input */
+}
+
+.form-label {
+  width: 180px; /* Largura fixa para os rótulos */
+  text-align: right;
+  padding-right: 15px;
+  font-weight: bold;
+  color: #555;
+  margin-top: 10px; /* Alinhamento vertical */
+  font-size: 1rem;
+}
+
+.form-label .required {
+  color: #e74c3c;
+  margin-right: 4px;
+}
+
+/* Container para os inputs e textareas */
+.form-input, .form-textarea, .textarea-container {
+  flex: 1; /* Faz com que ocupem o resto do espaço */
+}
+
+/* Estilo padrão para os campos de entrada */
+.form-input, .form-textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  box-sizing: border-box;
+  transition: border-color 0.3s;
+}
+
+.form-input:focus, .form-textarea:focus {
+  border-color: #003366;
+  outline: none;
+}
+
+.form-textarea {
+  height: 120px;
+  resize: vertical;
+}
+
+/* Container para a área de texto e o contador */
+.textarea-container {
   position: relative;
 }
 
-.google-button {
-  position: absolute;
-  right: 10px;
-  background: none;
-  border: none;
-  padding: 0;
-  cursor: pointer;
-}
-
-.google-icon {
-  width: 20px;
-  height: 20px;
-}
-
-textarea.form-textarea {
-  resize: none;
-  padding: 10px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  font-size: 0.9rem;
-  min-height: 80px;
-}
-
 .char-count {
+  position: absolute;
+  bottom: 8px;
+  right: 10px;
   font-size: 0.8rem;
   color: #888;
-  text-align: right;
 }
 
-.selected-services {
+/* Container para os botões */
+.buttons-container {
+  /* Empurra os botões para a direita, alinhados com os inputs */
+  margin-left: 180px; /* Mesma largura do .form-label + padding */
   display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  margin-bottom: 6px;
-}
-
-.service-chip {
-  display: flex;
-  align-items: center;
-  background-color: #f9f9f9;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  padding: 5px 10px;
-  font-size: 0.9rem;
-  color: #333;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.service-chip:nth-child(even) {
-  background-color: #e8f5ff;
-  color: #007bff;
-}
-
-.service-chip .remove-service {
-  background: none;
-  border: none;
-  margin-left: 10px;
-  cursor: pointer;
-  font-weight: bold;
-  color: #ff5f5f;
-}
-
-.service-chip .remove-service:hover {
-  color: #d60000;
-}
-
-.buttons {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 10px;
+  gap: 15px;
+  padding-top: 10px;
 }
 
 .button {
-  padding: 10px 20px;
-  font-size: 0.9rem;
+  padding: 12px 30px;
+  font-size: 1rem;
   font-weight: bold;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-}
-
-.back-button {
-  background-color: #ffffff;
-  color: #4d90fe;
-  border: 2px solid #4d90fe;
   transition: all 0.3s ease;
 }
 
+.back-button {
+  background-color: #fff;
+  color: #003366;
+  border: 2px solid #003366;
+}
+
 .back-button:hover {
-  background-color: #4d90fe;
-  color: white;
+  background-color: #f0f0f0;
 }
 
 .submit-button {
-  background-color: #4d90fe;
+  background-color: #003366;
   color: white;
-  transition: background-color 0.3s ease;
+  border: 2px solid #003366;
 }
 
 .submit-button:hover {
-  background-color: #357ae8;
+  background-color: #0055a5;
+  border-color: #0055a5;
+}
+
+/* Ajustes para telas pequenas */
+@media (max-width: 600px) {
+  .form-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .form-label {
+    width: 100%;
+    text-align: left;
+    margin-top: 0;
+    margin-bottom: 5px;
+  }
+
+  .buttons-container {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .button {
+    flex: 1; /* Faz os botões ocuparem o espaço igualmente */
+  }
+
+  /* Remove o padding fixo daqui */
+  .conteudo-pagina {
+    width: 100%;
+  }
+
+  /* Adiciona o padding APENAS para telas de desktop */
+  @media (min-width: 769px) {
+    .conteudo-pagina {
+      padding-top: 82px; /* Apenas em telas maiores que 768px */
+    }
+  }
+
+  /* Opcional: Adiciona um padding menor para o celular, se necessário */
+  @media (max-width: 768px) {
+    .conteudo-pagina {
+      padding-top: 20px; /* Um pequeno respiro no celular */
+    }
+  }
 }

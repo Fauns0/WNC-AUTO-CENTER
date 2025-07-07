@@ -4,11 +4,10 @@ import LocalizacaoImage from '../Img/Localizacao.png';
 
 function Localizacao() {
   return (
+    // O id foi REMOVIDO daqui
     <section className="Localizacao container">
       <div className="Localizacao-content">
-        <h2>
-          Localização <span className="highlight"> </span>
-        </h2>
+        <h2>Localização</h2>
         <p>
           Nossa oficina está localizada na R. São Domingos - Areão, Cuiabá - MT, 78010-303.
         </p>
@@ -18,7 +17,9 @@ function Localizacao() {
           atendimento!
         </p>
         <br/> 
-        <a href="https://maps.app.goo.gl/QVUjqMbkG21y4kWA7" > <button  > Map</button></a>
+        <a href="https://www.google.com/maps" target="_blank" rel="noopener noreferrer">
+          <button>Ver no Mapa</button>
+        </a>
       </div>
       <div className="Localizacao-image">
         <img src={LocalizacaoImage} alt="Imagem de Localização" />
